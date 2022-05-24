@@ -9,12 +9,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        
+
         brightRed: 'hsl(12,88%,59%)',
         veryLightGray: 'hsl(0,0%,98%)',
       },
-    }
+    },
+    plugins: [require("daisyui")],
     
   },
-  plugins: [],
 }

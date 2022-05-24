@@ -468,8 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-@tailwind component;
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;

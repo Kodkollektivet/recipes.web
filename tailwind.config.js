@@ -1,20 +1,14 @@
-module.exports = {
-  content: ['./*.html'],
-  theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
-    extend: {
-      colors: {
+const defaultTheme = require('tailwindcss/defaultTheme');
 
-        brightRed: 'hsl(12,88%,59%)',
-        veryLightGray: 'hsl(0,0%,98%)',
-      },
+module.exports = {
+    content: [
+        './*.html',
+    ],
+
+    plugins: [require('@tailwindcss/typography'),
+              require('daisyui')],
+
+    daisyui: {
+        themes: ["retro"],
     },
-    plugins: [require("daisyui")],
-    
-  },
-}
+};
